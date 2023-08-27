@@ -74,7 +74,7 @@ def main(argv):
   reports.generate("/tmp/cars.pdf","Sales summary for last month",body,table_data)
   # TODO: send the PDF report as an email attachment
   mail_body = '\n'.join(summary)
-  receiver = "{}@example.com".format(os.environ.get('USER'))
+  receiver = "vvmrohit10@gmail.com"
   sender = "automation@example.com"
   send_message = emails.generate(sender,receiver ,"Sales summary for last month",mail_body,"/tmp/cars.pdf")
   emails.send(send_message)
